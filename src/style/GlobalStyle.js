@@ -43,6 +43,9 @@ a{
   padding: 0 1rem;
   margin: 0 auto;
 }
+input{
+  display: block;
+}
 
 `;
 
