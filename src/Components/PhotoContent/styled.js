@@ -13,7 +13,6 @@ export const ContainerPhoto = styled.div`
   opacity: 0;
   transform: scale(0.8);
   animation: scaleUp 0.3s forwards;
-
   @keyframes scaleUp {
     to {
       opacity: initial;

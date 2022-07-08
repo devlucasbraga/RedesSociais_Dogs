@@ -2,19 +2,27 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { ContainerPhoto, Details, Title } from "./styled";
 import PhotoComments from "../PhotoComments";
+import { UserContext } from "../../UserContext";
+import PhotoDelete from "../PhotoDelete";
+import Image from "../Helper/Image";
 
 const PhotoContent = ({ data }) => {
+  const user = React.useContext(UserContext);
   const { photo, comments } = data;
 
   return (
     <ContainerPhoto>
       <div>
-        <img src={photo.src} alt={photo.title} />
+        <Image src={photo.src} alt={photo.title} />
       </div>
       <Details>
         <div>
           <p>
-            <Link to={`/perfil/${photo.author}`}>@{photo.author}</Link>
+            {user.data && user.data.username && photo.author ? (
+              <PhotoDelete id={photo.id} />
+            ) : (
+              <Link to={`/perfil/${photo.author}`}>@{photo.author}</Link>
+            )}
             <span>{photo.acessos}</span>
           </p>
           <Title className="title">
@@ -25,8 +33,8 @@ const PhotoContent = ({ data }) => {
             <li>{photo.idade}Anos</li>
           </ul>
         </div>
+        <PhotoComments id={photo.id} comments={comments} />
       </Details>
-      <PhotoComments id={photo.id} comments={comments} />
     </ContainerPhoto>
   );
 };
