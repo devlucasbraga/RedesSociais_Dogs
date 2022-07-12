@@ -14,7 +14,10 @@ const PhotoComments = (props) => {
 
   return (
     <>
-      <ContainerComment ref={commentsSections}>
+      <ContainerComment
+        className={props.single ? "single" : ""}
+        ref={commentsSections}
+      >
         {comments.map((comment) => (
           <li key={comment.comment_ID}>
             <b>{comment.comment_author}: </b>

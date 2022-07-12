@@ -61,7 +61,7 @@ a{
     z-index: -1;
   }
 }
-
+/* Container Geral */
 .container{
   max-width: 50rem;
   padding: 0 1rem;
@@ -69,20 +69,41 @@ a{
 }
 
 .mainContainer{
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
+/* Animação para as paginas */
 .animeLeft {
   opacity: 0;
   transform: translateX(-20px);
   animation: animeLeft .3s forwards;
 }
 
+/* Ajuste do PhotoContent quando abre uma imagem só */
+.single {
+  grid-template-columns: 1fr;
+  height: auto;
+
+      div {
+      img {
+        grid-row: 1;
+        border-radius:.4rem;
+       
+      }
+    }
+    @media (max-width: 64rem) {
+    grid-template-columns: none;
+    overflow-y: auto;
+  }
+  .details{
+    padding: 1rem 0 0 0 ;
+  }
+  }
 
 @keyframes animeLeft {
   to{
-opacity: 1;
-transform: initial;
+    opacity: 1;
+    transform: initial;
   }
 
 }
