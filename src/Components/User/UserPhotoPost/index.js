@@ -9,6 +9,7 @@ import Input from "../../Forms/Input";
 import Button from "../../Forms/Button";
 
 import { SectionPosPhoto, ContainerPreview } from "./styled";
+import Head from "../../Helper/Head";
 
 const UserPhotoPost = () => {
   const nome = useForm();
@@ -44,6 +45,7 @@ const UserPhotoPost = () => {
 
   return (
     <SectionPosPhoto className="animeLeft">
+      <Head title="Poste sua Foto" />
       <form onSubmit={handleSubmit}>
         <Input label="Nome" type="text" nome="nome" {...nome} />
         <Input label="Peso" type="number" nome="peso" {...peso} />

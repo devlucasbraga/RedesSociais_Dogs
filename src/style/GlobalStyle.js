@@ -107,6 +107,18 @@ a{
   }
 
 }
+
+/* Classes para ajusta o footer do resto do body e ficarem fixo sem pular */
+.App{
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh + 10rem);
+}
+.appBody{
+  flex: 1;
+}
+
+
 `;
 
 export default GlobalStyle;

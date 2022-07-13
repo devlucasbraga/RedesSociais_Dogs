@@ -6,6 +6,7 @@ import useForm from "../../../Hooks/useForm";
 import { UserContext } from "../../../UserContext";
 import { LoginContainer, Cadastro } from "./styled";
 import Error from "../../Helper/Error";
+import Head from "../../Helper/Head";
 
 const LoginForm = () => {
   const username = useForm();
@@ -23,6 +24,7 @@ const LoginForm = () => {
 
   return (
     <LoginContainer className="animeLeft">
+      <Head title='Login'/>
       <h1 className="title">Login</h1>
       <form onSubmit={handleSubmit}>
         <Input label="Usuário" type="text" name="usuario" {...username} />
