@@ -1,6 +1,6 @@
 # Dogs - Rede social para cachorros
 
-Uma app que simular uma rede social para cachorro, onde pode postar fotos comentar criar uma conta.
+Um app que simula uma rede social para cachorro, onde pode postar fotos, comentar, criar uma conta.
 
 ## Descrição
 
