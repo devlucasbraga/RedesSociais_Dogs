@@ -21,6 +21,7 @@ export const LoginContainer = styled.section`
 
 export const Cadastro = styled.div`
   margin-top: 4rem;
+  margin-bottom: 4rem;
   h2 {
     font-family: var(--type-second);
     line-height: 1;

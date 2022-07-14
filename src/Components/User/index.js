@@ -10,6 +10,7 @@ import Head from "../Helper/Head";
 
 const User = () => {
   const { data } = React.useContext(UserContext);
+  
   return (
     <section className="container">
       <Head title="Minha Conta" />

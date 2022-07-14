@@ -14,7 +14,7 @@ export const ContainerGraph = styled.section`
     align-items: center;
   }
 
-  div p {
+  .acessos {
     grid-column: 1/3;
     padding: 2rem;
     font-size: 2rem;

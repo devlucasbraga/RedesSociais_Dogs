@@ -15,21 +15,20 @@ const UserStatsGraphs = ({ data }) => {
     });
 
     setTotal(
-      data.map(({ acessos }) => Number(acessos)).reduce((a, b) => a + b),
+      data.map(({ acessos }) => Number(acessos)).reduce((a, b) => a + b, 0),
     );
     setGraph(graphData);
-    console.log(data);
   }, [data]);
 
   return (
     <ContainerGraph className="animeLeft">
-      <div>
-        <p>Acessos : {total}</p>
+      <div className="acessos">
+        <p>Acessos: {total}</p>
       </div>
       <div>
         <VictoryPie
           data={graph}
-          innerRadius={40}
+          innerRadius={50}
           padding={{ top: 20, bottom: 20, left: 80, right: 80 }}
           style={{
             data: {
@@ -45,10 +44,8 @@ const UserStatsGraphs = ({ data }) => {
         />
       </div>
       <div>
-        <VictoryChart >
-          <VictoryBar alignment="start" data={data}>
-
-          </VictoryBar>
+        <VictoryChart>
+          <VictoryBar alignment="start" data={graph}></VictoryBar>
         </VictoryChart>
       </div>
     </ContainerGraph>
