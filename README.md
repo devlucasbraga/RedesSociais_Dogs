@@ -1,4 +1,4 @@
-# Dogs - Rede social para cachorros
+# Dogs - Rede social de cachorros
 
 Um app que simula uma rede social para cachorro, onde pode postar fotos, comentar, criar uma conta.
 
