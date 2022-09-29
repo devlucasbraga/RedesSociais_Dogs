@@ -19,6 +19,6 @@ Esse projeto foi criado como um projeto final no curso da Origamid de React.js e
 Curso do André
 * [Origamid](https://www.origamid.com/)
 
- ## Acesso a app
+ # Acesso ao app
 
 [Link](https://redes-sociais-dogs.vercel.app/)
