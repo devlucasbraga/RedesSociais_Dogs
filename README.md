@@ -20,5 +20,4 @@ Curso do André
 * [Origamid](https://www.origamid.com/)
 
 #Acesso a app
-
-*[Link](https://redes-sociais-dogs.vercel.app/)
+[Link](https://redes-sociais-dogs.vercel.app/)
